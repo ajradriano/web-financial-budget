@@ -1,5 +1,5 @@
-# WebFinancialBudget
-
+# web-financial-budget
+Aplicação web para controle financeiro
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 
 ## Development server
