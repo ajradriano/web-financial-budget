@@ -23,7 +23,9 @@
       "ES2022",
       "dom"
     ],
-    "esModuleInterop": true,
+    "paths" : {
+      "tslib" : [ " ./node_modules/tslib/tslib@2.xy/ tslib.d.ts " ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
