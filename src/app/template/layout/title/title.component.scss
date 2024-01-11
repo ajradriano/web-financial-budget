@@ -1,0 +1,17 @@
+.title h1 {
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+.title> :first-child {
+    padding-top: 20px;
+
+}
+.title> :last-child {
+    opacity: 0.30;
+    line-height: 18px;
+    margin-top: 5px;
+    transform: rotatex(180deg) translatey(15px);
+    mask-image: linear-gradient(transparent 25%, white 90%);
+    -webkit-mask-image: linear-gradient(transparent 25%, white 90%);
+}
