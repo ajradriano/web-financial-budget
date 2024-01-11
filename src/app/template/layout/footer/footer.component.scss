@@ -1,0 +1,40 @@
+.footer {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    bottom: 0;
+
+    .footer-text {
+        font-size: .65rem;
+        margin: 0;
+        padding: 0 5px 0 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        i {
+            color: red;
+            margin-right: 5px;
+            animation-name: heart-beat;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+            @keyframes heart-beat {
+                0% {
+                    font-size: 6px;
+                }
+
+                50% {
+                    font-size: 7px;
+                }
+
+                100% {
+                    font-size: 6px;
+                }
+            }
+        }
+    }
+}

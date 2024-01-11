@@ -1,8 +1,11 @@
 <div class="sidebar">
-    <h3>Left Sidebar</h3>
-    <p-sidebar  [(visible)]="showSideBar"
-                [baseZIndex]="10000">
-      <h3>Left Sidebar</h3>
-      <p-panelMenu [model]="items" [style]="{'width':'120px'}"></p-panelMenu>
-    </p-sidebar>
+  <div class="menuHamburguer">
+    <i class="pi pi-bars" (click)="openMenu()"></i>
   </div>
+  <p-sidebar [(visible)]="showSideBar" [baseZIndex]="10000">
+    <ng-template pTemplate="header">Financial Budget</ng-template>
+    <ng-template pTemplate="content">
+      Menu aqui
+    </ng-template>
+  </p-sidebar>
+</div>
