@@ -1,11 +1,11 @@
 <div class="sidebar">
   <div class="menuHamburguer">
-    <i class="pi pi-bars" (click)="openMenu()"></i>
+    <i class="pi pi-bars" pTooltip="Menu" (click)="openMenu()"></i>
   </div>
   <p-sidebar [(visible)]="showSideBar" [baseZIndex]="10000">
     <ng-template pTemplate="header">Financial Budget</ng-template>
     <ng-template pTemplate="content">
-      Menu aqui
+      <p-menu [model]="menu" styleClass="meu-menu"></p-menu>
     </ng-template>
   </p-sidebar>
 </div>
