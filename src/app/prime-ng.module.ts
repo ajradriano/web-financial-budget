@@ -7,6 +7,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { SidebarModule } from 'primeng/sidebar';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { TableModule } from 'primeng/table';
+import { TooltipModule } from 'primeng/tooltip';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [],
@@ -17,7 +19,9 @@ import { TableModule } from 'primeng/table';
     SidebarModule,
     PanelMenuModule,
     MenuModule,
-    TableModule
+    TableModule,
+    TooltipModule,
+    ChartModule,
   ],
   exports: [
     ButtonModule,
@@ -25,7 +29,9 @@ import { TableModule } from 'primeng/table';
     SidebarModule,
     PanelMenuModule,
     MenuModule,
-    TableModule
+    TableModule,
+    TooltipModule,
+    ChartModule,
   ],
 })
 export class PrimeNgModule {}
