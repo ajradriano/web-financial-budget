@@ -1,3 +1,5 @@
+import { AuthGuard } from './auth/auth.guard';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -8,11 +10,12 @@ import { PaymentMethodComponent } from './components/payment-method/payment-meth
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: 'home', component: DashboardComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'categorias', component: CategoriesComponent },
-  { path: 'tipos-movimento', component: TypesComponent },
-  { path: 'metodos-pagamento', component: PaymentMethodComponent },
+  { path: 'home', component: DashboardComponent, canActivate:[AuthGuard]},
+  { path: 'categorias', component: CategoriesComponent, canActivate:[AuthGuard]},
+  { path: 'tipos-movimento', component: TypesComponent, canActivate:[AuthGuard]},
+  { path: 'metodos-pagamento', component: PaymentMethodComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({

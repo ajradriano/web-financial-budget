@@ -24,6 +24,7 @@ export class LoginComponent {
     this.authService.login(this.email, this.password).subscribe(
       () => {
         this.router.navigate(['home']);
+        console.log('e');
       },
       (error) => {
         console.error('Erro durante o login: Verifique os dados enviados.');
