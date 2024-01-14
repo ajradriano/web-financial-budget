@@ -13,12 +13,16 @@
 .login-content {
     width: 60vw;
     height: 55vh;
+
     .login-inputs {
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .login-input-item {
+            width: auto;
             margin: 10px;
             border: none;
         }

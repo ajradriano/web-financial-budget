@@ -1,7 +1,9 @@
+import {CookieService} from 'ngx-cookie-service';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 // Libs
 import { PrimeNgModule } from './prime-ng.module';
@@ -16,7 +18,6 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { TitleComponent } from './template/layout/title/title.component';
 import { ListComponent } from './template/layout/list/list.component';
 import { TypesComponent } from './components/types/types.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ListComponent,
     CategoriesComponent,
     TypesComponent,
-    FontAwesomeModule
+    FormsModule
   ],
-  exports: [FontAwesomeModule],
-  providers: [],
+  exports: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

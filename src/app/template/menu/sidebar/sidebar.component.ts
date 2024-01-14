@@ -18,7 +18,7 @@ export class SidebarComponent implements OnInit {
             {
                 label: 'Home',
                 icon: 'pi pi-fw pi-home',
-                routerLink: [''],
+                routerLink: ['/home'],
                 command: () => {
                     this.openMenu()
                 }

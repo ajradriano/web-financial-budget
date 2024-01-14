@@ -8,7 +8,7 @@ import { PaymentMethodComponent } from './components/payment-method/payment-meth
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: 'home', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'categorias', component: CategoriesComponent },
   { path: 'tipos-movimento', component: TypesComponent },

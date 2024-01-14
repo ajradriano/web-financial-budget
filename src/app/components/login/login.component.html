@@ -2,21 +2,24 @@
     <p-card header="Bem-vindo!">
         <div class="login-content">
             <div class="login-asset"></div>
-            <div class="login-inputs">
-                <i class="fa-solid fa-user login-user-icon"></i>
-                <p-inputGroup class="login-input-item">
-                    <p-inputGroupAddon>
-                        <i class="fa-solid fa-at"></i>
-                    </p-inputGroupAddon>
-                    <input pInputText placeholder="Email" />
-                </p-inputGroup>
-                <p-inputGroup class="login-input-item">
-                    <p-inputGroupAddon>
-                        <i class="fa-solid fa-key"></i>
-                    </p-inputGroupAddon>
-                    <input pInputText placeholder="Password" />
-                </p-inputGroup>
-            </div>
+            <p-card>
+                <div class="login-inputs">
+                    <i class="fa-solid fa-user login-user-icon"></i>
+                    <p-inputGroup class="login-input-item">
+                        <p-inputGroupAddon>
+                            <i class="fa-solid fa-at"></i>
+                        </p-inputGroupAddon>
+                        <input pInputText name="email" [(ngModel)]="email" value="deverson@mail.com" placeholder="Email" />
+                    </p-inputGroup>
+                    <p-inputGroup class="login-input-item">
+                        <p-inputGroupAddon>
+                            <i class="fa-solid fa-key"></i>
+                        </p-inputGroupAddon>
+                        <input pInputText name="password"  [(ngModel)]="password" value="deverson" placeholder="Password" />
+                    </p-inputGroup>
+                    <p-button label="Log-in" (click)="login()"></p-button>
+                </div>
+            </p-card>
         </div>
     </p-card>
 </div>
