@@ -9,7 +9,9 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { ChartModule } from 'primeng/chart';
-
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { CardModule } from 'primeng/card';
 @NgModule({
   declarations: [],
   imports: [
@@ -22,6 +24,9 @@ import { ChartModule } from 'primeng/chart';
     TableModule,
     TooltipModule,
     ChartModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    CardModule,
   ],
   exports: [
     ButtonModule,
@@ -32,6 +37,9 @@ import { ChartModule } from 'primeng/chart';
     TableModule,
     TooltipModule,
     ChartModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    CardModule,
   ],
 })
 export class PrimeNgModule {}

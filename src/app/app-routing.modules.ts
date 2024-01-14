@@ -5,9 +5,11 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { TypesComponent } from './components/types/types.component';
 import { PaymentMethodComponent } from './components/payment-method/payment-method.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'categorias', component: CategoriesComponent },
   { path: 'tipos-movimento', component: TypesComponent },
   { path: 'metodos-pagamento', component: PaymentMethodComponent },
